@@ -3,4 +3,6 @@ Algoritmo Juego_Carisellazo
 	//Integrante 2 Leydi Natalia Perez Castillo
 	//Integrante 3 Yey Tatiana Perez Rios
 	
+	// Rama developer
+	
 FinAlgoritmo
