@@ -12,11 +12,16 @@ Algoritmo Juego_Carisellazo
 	
 	//Parte 5 colaborador Esteban Castillo "Se agrego la pregunta de cuanto dinero desea apostar"
 	Definir monto Como Entero
-	Escribir "Escriba el monto que desea apostar en esta ronda:"
-	Leer monto
+	
+	/Parte 8 colaborador Yey Perez "Se agrego lo que va a permitir el calculo de los datos solicitados al final"
+	contador=0
+	acumulador=0
+	
 	Escribir "¿Desea realizar el lanzamiento de la moneda? Si/No"
 	Leer respuesta
 	Mientras respuesta = "Si" Hacer
+	        Escribir "Escriba el monto que desea apostar en esta ronda:"
+	        Leer monto
 		moneda= azar(2) + 1
 		Si moneda=1 Entonces
 			respuesta_2= "Cara"
@@ -25,6 +30,7 @@ Algoritmo Juego_Carisellazo
 		FinSi
 		Escribir "Seleccione la opcion que cree que va a salir entre Cara o Sello"
 		Leer respuesta_3
+		
 		Escribir "La moneda cayo en:", respuesta_2
 		Si respuesta_2 = respuesta_3 Entonces
 			Escribir "Gano el juego"
@@ -43,5 +49,9 @@ Algoritmo Juego_Carisellazo
 		Escribir "¿Desea realizar otro lanzamiento? Si/No"
 		Leer respuesta 
 		contador=contador+1
+		acumulador=acumulador+monto
 	Fin Mientras
+	//Ultima parte del codigo colaborador Yey Perez "Se agregó el contador que permite saber cuantas veces jugo la persona, y también se agrega el acumulador que permite saber el total acumulado en apuestas"
+	Escribir " La cantidad de veces que jugo fueron:" contador
+        Escribir " El dinero acumulado en apuestas fue de:" acumulador
 FinAlgoritmo
