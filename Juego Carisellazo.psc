@@ -28,24 +28,4 @@ Algoritmo Juego_Carisellazo
 		Leer respuesta 
 		contador=contador+1
 	Fin Mientras
-	
-	//Parte 4 sistema de apuestas
-	Definir monto Como Entero
-	Escribir "Escriba el monto que desea apostar en esta ronda:"
-	//En esta parte podemos ingresar el monto a apostar
-	Leer monto
-	Si respuesta_2 = respuesta_3 Entonces
-		Total_Suma=monto*2
-		Escribir "La cantidad del dinero ganado es de:" Total_Suma
-		//Aqui se genera el monto ganado en base a una duplicacion
-	SiNo                
-		Total_Resta=Total_Suma-monto
-		Escribir "La cantidad del dinero perdido es de:" Total_Resta
-		
-	FinSi
-	Total_Apuesta= Total_Suma+Total_Resta
-	Escribir "El valor total ganado es de:" Total_Apuesta
-	//Y para finalizar observamos como la parte del codigo muestra el total ganado 
-	
-	
 FinAlgoritmo
