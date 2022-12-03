@@ -7,6 +7,11 @@ Algoritmo Juego_Carisellazo
 	
 	Definir respuesta, respuesta_2, respuesta_3 Como Caracter
 	Definir moneda Como Entero
+	
+	//Parte 5 colaborador Esteban Castillo "Se agrego la pregunta de cuanto dinero desea apostar"
+	Definir monto Como Entero
+	Escribir "Escriba el monto que desea apostar en esta ronda:"
+	Leer monto
 	Escribir "¿Desea realizar el lanzamiento de la moneda? Si/No"
 	Leer respuesta
 	Mientras respuesta = "Si" Hacer
@@ -21,9 +26,18 @@ Algoritmo Juego_Carisellazo
 		Escribir "La moneda cayo en:", respuesta_2
 		Si respuesta_2 = respuesta_3 Entonces
 			Escribir "Gano el juego"
+	//Parte 6 colaborador Esteban Castillo "Se agregó la parte que permite que cada vez que gane el juego se duplique el valor apostado por medio de una fórmula"
+			Total_Suma=monto*2
+		        Escribir "La cantidad del dinero ganado es de:" Total_Suma
+	
 		SiNo
 			Escribir "Perdio el juego"
+	// Parte 7 colaborador Esteban Castillo "Se agregó la parte que permite que cada vez que pierda el juego se reste el valor apostado por medio de una fórmula"
+	               Total_Resta=Total_Suma-monto
+		       Escribir "La cantidad del dinero perdido es de:" Total_Resta
 		FinSi
+		Total_Apuesta= Total_Suma+Total_Resta
+	        Escribir "El valor total ganado es de:" Total_Apuesta
 		Escribir "¿Desea realizar otro lanzamiento? Si/No"
 		Leer respuesta 
 		contador=contador+1
